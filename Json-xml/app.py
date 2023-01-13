@@ -138,6 +138,6 @@ def jsonresponsemcp():
 
 
 if __name__ == "__main__":
-    address = "172.16.11.206"
+    address = "172.18.64.1"
     prt = 8086
     app.run(host=address, port=prt ,debug=True)

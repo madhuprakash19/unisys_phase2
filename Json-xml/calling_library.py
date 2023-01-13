@@ -95,7 +95,8 @@ def main():
 
 
     def xml(url):
-        r = obj.get(url)
+        url_ = url +"xmlresponse1/"
+        r = obj.get(url_)
         if r==999:
             print("Request timed out")
         elif responseCheck(r.status_code) == 1:
