@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<class>
+  <student>
+    
+    <name>Nikitha</name>
+    <usn>1NT19IS178</usn>
+    <section>C</section>
+    <cgpa>8.81</cgpa>
+    <age>20</age>
+  </student>
+  <student>
+  <name>Madhu</name>
+  <usn>1NT19IS176</usn>
+  <section>C</section>
+  <cgpa>9.3</cgpa>
+  </student>
+  <student>
+  <name>Laisha</name>
+  <usn>1NT19IS147</usn>
+  <section>C</section>
+  <cgpa>9.0</cgpa>
+  </student>
+  <student>
+  <name>lakshana</name>
+  <usn>1NT19IS174</usn>
+  <section>C</section>
+  <cgpa>9.5</cgpa>
+  </student>
+</class>

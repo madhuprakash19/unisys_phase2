@@ -1,0 +1,6 @@
+FROM python:3.10
+RUN pip install times
+RUN pip install psutil
+RUN pip install python-math
+ADD prime_lib.py .
+CMD [ "python","./prime_lib.py"]

@@ -1,0 +1,46 @@
+$SET LIST CODE                                                          
+                                                                        
+BEGIN                                                                   
+LIBRARY GENERALSUPPORT(LIBACCESS=BYTITLE,                               
+                     % TITLE="*SYSTEM/GENERALSUPPORT ON SYS00.");       
+         TITLE="(ADMINISTRATOR)OBJECT/LIB ON DISK.");                   
+REAL PROCEDURE LOG10(Z);  VALUE Z;  REAL Z;                             
+   LIBRARY GENERALSUPPORT;                                              
+                                                                        
+                                                                        
+   boolean PROCEDURE primeNo(a);                                        
+      value a;                                                          
+   dinteger a;                                                          
+   begin                                                                
+      double i;                                                         
+      boolean flag;                                                     
+      flag:=TRUE;                                                       
+      if a = 1 or a=0 then                                              
+         begin                                                          
+            flag:=FALSE;                                                
+         end;                                                           
+      FOR i:=2 step 1 until a div 2 do                                  
+         begin                                                          
+          if a mod i = 0 then                                           
+             begin                                                      
+               flag := FALSE;                                           
+             end;                                                       
+         end;                                                           
+      primeNo:= flag;                                                   
+                                                                        
+end of primeNo;                                                         
+                                                                        
+DOUBLE J;                                                               
+DOUBLE I;                                                               
+    FOR J:= 1 STEP 1 UNTIL 100 DO                                       
+    begin                                                               
+      if primeNo(J) then                                                
+         begin                                                          
+            DISPLAY(STRING(J,*));                                       
+            I:=LOG10(J);                                                
+            DISPLAY(STRING(I,*));                                       
+         end;                                                           
+    end;                                                                
+end.                                                                    
+                                                                        
+                                                                        

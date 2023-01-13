@@ -1,0 +1,11 @@
+FROM python:3.10
+
+ADD requirements.txt .
+RUN pip install -r requirements.txt
+
+ADD calling_library.py .
+
+ADD client_library $HOME/client_library
+
+
+CMD ["python","./calling_library.py"]

@@ -1,0 +1,8 @@
+{
+  "stat": "OK",
+  "response": {
+        "result": "deny",
+        "status": "deny",
+        "status_msg": "Selected number is restricted from Duo Push authentication"
+  }
+}
